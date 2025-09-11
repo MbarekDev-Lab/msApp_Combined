@@ -1,7 +1,9 @@
 package com.mbarekDev.gamerunner.game;
 
 import com.mbarekDev.gamerunner.GamingConsole;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MarioGame implements GamingConsole {
 
     public void up() {

@@ -1,11 +1,14 @@
 package com.mbarekDev.gamerunner;
 
-import com.mbarekDev.gamerunner.game.MarioGame;
-import com.mbarekDev.gamerunner.game.SuperContaGame;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public class GameRunner  {
-   // private final MarioGame game;
+@Component
+public class GameRunner {
+    // private final MarioGame game;
     //private  final SuperContaGame game;
+
+    @Autowired
     private final GamingConsole game;
 
     public GameRunner(GamingConsole game) {

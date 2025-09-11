@@ -1,9 +1,10 @@
 package com.mbarekDev.gamerunner.game;
 
 import com.mbarekDev.gamerunner.GamingConsole;
+import org.springframework.stereotype.Component;
 
+@Component
 public class SuperContaGame implements GamingConsole {
-
     public void up() {
         System.out.println("SuperContra up");
 
