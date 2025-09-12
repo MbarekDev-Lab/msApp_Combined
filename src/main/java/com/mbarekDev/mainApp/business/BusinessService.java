@@ -17,7 +17,6 @@ public class BusinessService {
         return reduce.get();
     }
     public long calculateSum2() {
-        return dataService.getData().stream()
-                .reduce(0, Integer::sum);
+        return dataService.getData().stream().reduce(0, Integer::sum);
     }
 }
