@@ -9,6 +9,9 @@
         <module name="gsmrrunner" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gsmrrunner (1)" target="24" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -16,6 +19,7 @@
       <module name="devApp-ms.main" options="-parameters" />
       <module name="devApp-ms.test" options="-parameters" />
       <module name="gsmrrunner" options="-parameters" />
+      <module name="gsmrrunner (1)" options="-parameters" />
     </option>
   </component>
 </project>
