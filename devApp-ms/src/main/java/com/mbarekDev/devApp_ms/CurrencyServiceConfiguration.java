@@ -1,5 +1,4 @@
 package com.mbarekDev.devApp_ms;
-
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +8,7 @@ import org.springframework.stereotype.Component;
   currency-service.username=user
   currency-service.key=your_api_key
  */
+
 @Component
 @ConfigurationProperties(prefix = "currency-service")
 public class CurrencyServiceConfiguration {
