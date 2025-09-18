@@ -94,9 +94,14 @@ package com.mbarekDev.devApp_ms;
 import com.mbarekDev.junit.MyMath;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MyMathTest {
+    MyMath math1 = new MyMath();
+    List<String> todos = Arrays.asList("AWS", "Azure", "DevOps", "Automation");
 
     @Test
     public void testAddition() {
@@ -108,10 +113,27 @@ public class MyMathTest {
     @Test
     public void anotherTest() {
         int[] nums = {1, 2, 3, 4};
-        MyMath math1 = new MyMath();
+
         int res = math1.calculateSum(nums);
         // Removed System.out.println(res); as it's not recommended in final test code.
         int expectedRes = 10; // Corrected expected sum from 6 to 10
         assertEquals(expectedRes, res, "Sum of {1,2,3,4} should be 10");
+    }
+
+    @Test
+    public void caclulatesum_ThreeMemberArray() {
+        assertEquals(5, math1.calculateSum(new int[]{1, 2, 2}));
+    }
+
+    @Test
+    void test() {
+        /*
+        Expected :true
+        Actual   :false
+         */
+        boolean test = todos.contains("AWSs");
+       // assertEquals(true, test);
+        //fail("Not yet implimented"); //> Task :test FAILED
+        assertTrue(test);
     }
 }
