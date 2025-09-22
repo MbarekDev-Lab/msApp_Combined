@@ -53,13 +53,17 @@ public class CourseCommandLineRunner implements CommandLineRunner {
         );
         //System.out.println(course);
 
+        System.out.println(courseSpringDataJpaRepository.findByAuthor("mbarekDev"));
+        System.out.println(courseSpringDataJpaRepository.findByName("Learn Prompt Cloud JPA"));
+        System.out.println(courseSpringDataJpaRepository.findByName("Learn Prompt Engineering JPA"));
+
         System.out.println("Course operations successfully completed!");
     }
 }
 /*
-CREATE TABLE course (
-    id BIGINT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    author VARCHAR(255) NOT NULL
-);
+    CREATE TABLE course (
+        id BIGINT PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        author VARCHAR(255) NOT NULL
+    );
 */
