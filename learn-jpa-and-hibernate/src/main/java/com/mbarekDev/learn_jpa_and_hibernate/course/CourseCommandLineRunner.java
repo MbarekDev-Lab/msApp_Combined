@@ -51,17 +51,18 @@ public class CourseCommandLineRunner implements CommandLineRunner {
                 c -> System.out.println("Found: " + c),
                 () -> System.out.println("Course with ID 2 not found")
         );
-        //System.out.println(course);
 
+        //System.out.println(course);
+        //Map<String, Integer> map = new HashMap<>();
+        //Map<String, Integer> sortedByKey = new TreeMap<>(map);
+        // Map<String, Integer> sortedByKeyy = map.entrySet().stream().sorted(Map.Entry.comparingByKey()).collect(Collectors.toLinkedHashMap());
         System.out.println(courseSpringDataJpaRepository.findByAuthor("mbarekDev"));
         System.out.println(courseSpringDataJpaRepository.findByName("Learn Prompt Cloud JPA"));
         System.out.println(courseSpringDataJpaRepository.findByName("Learn Prompt Engineering JPA"));
-
         System.out.println("Course operations successfully completed!");
     }
 }
-/*
-    CREATE TABLE course (
+/* CREATE TABLE course (
         id BIGINT PRIMARY KEY,
         name VARCHAR(255) NOT NULL,
         author VARCHAR(255) NOT NULL

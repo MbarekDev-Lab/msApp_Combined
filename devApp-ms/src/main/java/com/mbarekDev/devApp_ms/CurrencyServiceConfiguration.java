@@ -8,11 +8,9 @@ import org.springframework.stereotype.Component;
   currency-service.username=user
   currency-service.key=your_api_key
  */
-
 @Component
 @ConfigurationProperties(prefix = "currency-service")
 public class CurrencyServiceConfiguration {
-
     private String url;
     private String username;
     private String key;

@@ -6,9 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DevAppMsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DevAppMsApplication.class, args);
-
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(DevAppMsApplication.class, args);
+    }
 }

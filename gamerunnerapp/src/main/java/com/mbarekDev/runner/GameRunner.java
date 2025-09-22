@@ -1,5 +1,4 @@
-package com.mbarekDev.gamerunner;
-
+package com.mbarekDev.runner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -7,7 +6,6 @@ import org.springframework.stereotype.Component;
 public class GameRunner {
     // private final MarioGame game;
     //private  final SuperContaGame game;
-
     @Autowired
     private final GamingConsole game;
 

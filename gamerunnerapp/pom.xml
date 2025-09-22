@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.mbarekDev</groupId>
-	<artifactId>gsmrrunner</artifactId>
+	<artifactId>gamerunnerapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>gsmrrunner</name>
+	<name>gamerunnerapp</name>
 	<description>.loose coupling with spring framework</description>
 	<url/>
 	<licenses>
@@ -41,7 +41,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -50,5 +49,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

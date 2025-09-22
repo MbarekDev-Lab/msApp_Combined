@@ -1,4 +1,4 @@
-package com.mbarekDev.gamerunner;
+package com.mbarekDev.runner;
 
 public interface GamingConsole {
     void up();

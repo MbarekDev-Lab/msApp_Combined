@@ -1,4 +1,4 @@
-package com.mbarekDev.gamerunner;
+package com.mbarekDev.runner;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,6 @@
-package com.mbarekDev.gamerunner.game;
+package com.mbarekDev.runner.game;
 
-import com.mbarekDev.gamerunner.GamingConsole;
+import com.mbarekDev.runner.GamingConsole;
 import org.springframework.stereotype.Component;
 
 @Component

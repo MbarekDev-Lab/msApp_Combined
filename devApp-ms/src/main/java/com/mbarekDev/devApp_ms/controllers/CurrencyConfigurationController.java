@@ -7,10 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CurrencyConfigurationController {
-
     @Autowired
     private CurrencyServiceConfiguration configuration;
-
     @GetMapping("/curency-configuration")
     public CurrencyServiceConfiguration retrieveAllCourses() {
         return configuration;

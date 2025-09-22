@@ -18,8 +18,6 @@ public class GamerunnerApplication {
         // GameRunner runner = new GameRunner(game);
         // GameRunner runner = context.getBean(GameRunner.class);
         // runner.run();
-
-
         WebController controller = context.getBean(WebController.class);
         System.out.println(controller.returnValueFromBusinessService());
     }

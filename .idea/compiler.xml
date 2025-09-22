@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gsmrrunner" />
+        <module name="gamerunnerapp" />
+        <module name="devApp-ms" />
         <module name="learn-jpa-and-hibernate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gsmrrunner (1)" target="24" />
+      <module name="gsmrrunner" target="24" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -19,8 +20,8 @@
       <module name="devApp-ms" options="-parameters" />
       <module name="devApp-ms.main" options="-parameters" />
       <module name="devApp-ms.test" options="-parameters" />
+      <module name="gamerunnerapp" options="-parameters" />
       <module name="gsmrrunner" options="-parameters" />
-      <module name="gsmrrunner (1)" options="-parameters" />
       <module name="learn-jpa-and-hibernate" options="-parameters" />
     </option>
   </component>
