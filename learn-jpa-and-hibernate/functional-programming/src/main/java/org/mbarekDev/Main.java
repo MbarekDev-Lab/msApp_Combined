@@ -8,31 +8,30 @@ import java.util.function.Predicate;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        List<Integer> nums = List.of(10, 9, 13, 4, 6, 2, 12, 15);
-        List<String> stucks = List.of("spring", "spring boot", "spr", "API", "ms", "AWS", "Docker", "Kubernetes");
+        var nums = List.of(10, 9, 13, 4, 6, 2, 12, 15);
+        var stucks = List.of("spring", "spring boot", "spr", "API", "ms", "AWS", "Docker", "Kubernetes");
+
         stucks.stream()
                 .filter(spring -> spring.contains("spring"))
                 .filter(spring -> spring.length() <= 6)
                 .forEach(System.out::println);
+
         nums.stream()
                 .filter(numbs -> numbs % 2 != 0)
                 .map(numbs -> numbs * numbs * numbs)
                 .forEach(System.out::println);
-
-        List<String> fruits = List.of("apple", "banana", "mango");
+        var fruits = List.of("apple", "banana", "mango");
 
         Predicate<? super String> predicate = fruit -> fruit.startsWith("c");
         Optional<String> optional = fruits.stream().filter(predicate).findFirst();
         System.out.println(optional);
         System.out.println(optional.isEmpty());
         System.out.println(optional.isPresent());
-        System.out.println(optional.get());
-
-        Optional<String> fruit=Optional.of("banana");
-        Optional<String> empty= Optional.empty();
+        System.out.println(optional.isPresent() ? optional.get().toString() : "Not present");
+        Optional<String> fruit = Optional.of("banana");
+        Optional<String> empty = Optional.empty();
         System.out.println(fruit);
         System.out.println(empty);
-
         // printAllNumbewrInListStructured(nums);
         // printOddNumbewrInListStructured(nums);
     }
@@ -57,5 +56,4 @@ public class Main {
     private static boolean printEven(int num) {
         return num % 2 == 0;
     }
-
 }
